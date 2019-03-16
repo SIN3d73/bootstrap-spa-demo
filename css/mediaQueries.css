@@ -1,0 +1,35 @@
+/*xs*/
+.project-name{
+    color: #bfffff;
+    font-style: italic;
+}
+
+/*sm*/
+@media (min-width: 576px) {
+    .project-name{
+        color: #bfffff;
+        font-style: italic;
+    }
+}
+
+/*md*/
+@media (min-width: 768px) {
+    .project-name{
+        color: #bfffff;
+    }
+}
+
+/*lg*/
+@media (min-width: 992px) {
+    .project-name{
+        color: #bfffff;
+        font-style: normal;
+    }
+}
+
+/*xl*/
+@media (min-width: 1200px) {
+    .project-name{
+        color: #bfffff;
+    }
+}

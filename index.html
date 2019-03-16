@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BootstrapDemo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Libs-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <!--Your styles-->
+    <link rel="stylesheet" href="css/bootstrapOverlay.css">
+    <link rel="stylesheet" href="css/myStyles.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+</head>
+<body class="smooth-scroll">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Bootstrap Demo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#layout" data-toggle="collapse" data-target=".navbar-collapse.show">
+                        Layout
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-form-panel" data-toggle="collapse"
+                       data-target=".navbar-collapse.show">
+                        Contact form
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dom-manipulation" data-toggle="collapse"
+                       data-target=".navbar-collapse.show">
+                        DOM manipulation
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active"
+                 style="background-image: url('https://source.unsplash.com/XlYmpmNJhf8/1920x1080')">
+                <div class="carousel-caption ">
+                    <h2 class="display-4">First Slide</h2>
+                    <p class="lead">This is a description for the first slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item"
+                 style="background-image: url('https://source.unsplash.com/Im7lZjxeLhg/1920x1080')">
+                <div class="carousel-caption ">
+                    <h2 class="display-4">Second Slide</h2>
+                    <p class="lead">This is a description for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item"
+                 style="background-image: url('https://source.unsplash.com/1td5Iq5IvNc/1920x1080')">
+                <div class="carousel-caption ">
+                    <h2 class="display-4">Third Slide</h2>
+                    <p class="lead">This is a description for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</header>
+
+<main class="mb-5">
+    <section id="layout" class="pt-5">
+        <h1 class="text-center text-info ">Basic layout</h1>
+
+        <div class="container-fluid mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <p>Let's see <b>container-fluid</b> behavior</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <p>Let's see <b>container</b> behavior</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <h1 class="text-center text-info ">Bootstrap layout</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h5 class="text-primary">col-4</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur debitis dolorum ducimus
+                        id, laborum officia praesentium reiciendis rerum tenetur voluptatem. Delectus, deleniti dolorem,
+                        eius enim expedita laboriosam natus nisi optio quas, quod reprehenderit ullam vero voluptatibus!
+                        Distinctio eaque fugit suscipit?
+                    </p>
+                </div>
+                <div class="offset-1 col-3">
+                    <h5 class="text-primary">col-3 offset-1</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam, asperiores
+                        consequatur delectus harum iure non odio optio perferendis quam, quia reiciendis tempora
+                        veritatis! Atque deleniti dolores odio sequi tenetur?
+                    </p>
+                </div>
+                <div class="col-3">
+                    <h5 class="text-primary">col-3</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut corporis, ea pariatur quidem
+                        rem soluta temporibus! Alias architecto dolores explicabo illo inventore maiores, necessitatibus
+                        obcaecati, rerum, ullam voluptas voluptatem.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h5 class="text-primary">new row col-12</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eius eveniet
+                        expedita fugiat minus nam quibusdam, reprehenderit vel! Alias aliquam assumenda cumque
+                        cupiditate
+                        debitis dolore dolorem ducimus error, esse est expedita inventore, ipsa itaque maxime nemo
+                        nulla,
+                        officiis omnis perspiciatis reprehenderit repudiandae sed ullam voluptas voluptate? Natus
+                        perspiciatis quisquam sint.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <h5 class="text-primary">responsive fist col</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eius eveniet
+                        expedita fugiat minus nam quibusdam, reprehenderit vel! Alias aliquam assumenda cumque
+                        cupiditate
+                        debitis dolore dolorem ducimus error, esse est expedita inventore, ipsa itaque maxime nemo
+                        nulla,
+                        officiis omnis perspiciatis reprehenderit repudiandae sed ullam voluptas voluptate? Natus
+                        perspiciatis quisquam sint.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <h5 class="text-primary">responsive second col</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eius eveniet
+                        expedita fugiat minus nam quibusdam, reprehenderit vel! Alias aliquam assumenda cumque
+                        cupiditate
+                        debitis dolore dolorem ducimus error, esse est expedita inventore, ipsa itaque maxime nemo
+                        nulla,
+                        officiis omnis perspiciatis reprehenderit repudiandae sed ullam voluptas voluptate? Natus
+                        perspiciatis quisquam sint.
+                    </p>
+                </div>
+                <div class="d-none d-xl-block col-xl-4">
+                    <h5 class="text-primary">responsive disappearing col</h5>
+                    <img src="https://via.placeholder.com/300x200/17a2b8/ffffff" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-form-panel" class="pt-5">
+        <h1 class="text-center text-info ">Contact form</h1>
+        <div class="full-img-bg">
+            <div class="container">
+                <!--suppress HtmlUnknownTarget -->
+                <form id="contact-form" action="/test">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="first-name" class="required">First name</label>
+                                <input type="text" name="firstName" id="first-name" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="last-name" class="required">Last name</label>
+                                <input type="text" name="lastName" id="last-name" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="email" class="required">Email</label>
+                                <input type="email" name="email" id="email" class="form-control" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="contents" class="required">Contents</label>
+                                <textarea type="text" name="contents" id="contents" class="form-control" rows="12"
+                                          required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="error" style="display: none;">
+                        <div class="col-sm-12">
+                            <div class="alert alert-danger text-center" role="alert">
+                                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                Error occurred during sending message. Try again later!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="success" style="display: none;">
+                        <div class="col-sm-12">
+                            <div class="alert alert-success text-center" role="alert">
+                                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                                Message sent!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button class="btn btn-lg btn-danger" type="reset">
+                                <i class="fa fa-refresh"></i>
+                                Reset
+                            </button>
+                            <button class="btn btn-lg btn-light float-right" type="submit" id="contact-submit">
+                                <i class="fa fa-paper-plane"></i>
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="dom-manipulation" class="pt-5">
+        <h1 class="text-center text-info ">DOM manipulation</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="test-input">test</label>
+                        <div class="input-groupŁ mb-3">
+                            <input type="text" id="test-input" class="form-control">
+                            <div class="input-group-append">
+                                <button class="btn btn-success float-right" type="button" id="print-btn">
+                                    Print it!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="alert alert-success" role="alert">
+                        Result: <span class="typed" id="test1"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="alert alert-success" role="alert">
+                        Result: <span id="test2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer class="mainfooter text-center text-md-left" role="contentinfo">
+    <div class="footer-middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-pad">
+                        <h4>Address</h4>
+                        <address>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    25-555 Fake City<br>
+                                    &nbsp;&nbsp;&nbsp;Fake Street 97/2<br>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <a href="tel:+48123123123">
+                                        +48 123-123-123
+                                    </a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-pad">
+                        <h4>Popular Services</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#"></a></li>
+                            <li><a href="#">Forms</a></li>
+                            <li><a href="#">News and Updates</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-pad">
+                        <h4>Website Information</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Webmaster</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 text-lg-right text-md-left text-sm-center">
+                    <h3 class="project-name">BootstrapDemo&nbsp;&reg;</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="text-xs-center">&copy; Copyright 2018 Demo template - Piotr Bender.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--Libs-->
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="node_modules/smooth-scroll/dist/smooth-scroll.polyfills.js"></script>
+<script type="text/javascript" src="node_modules/typed.js/lib/typed.min.js"></script>
+<!--Your scripts last-->
+<script type="text/javascript" src="js/smoothScroll.js"></script>
+<script type="text/javascript" src="js/contactForm.js"></script>
+<script type="text/javascript" src="js/domManipulation.js"></script>
+
+
+<!--preloadImagesTrick-->
+<img src="https://source.unsplash.com/XlYmpmNJhf8/1920x1080" alt="" hidden>
+<img src="https://source.unsplash.com/Im7lZjxeLhg/1920x1080" alt="" hidden>
+<img src="https://source.unsplash.com/1td5Iq5IvNc/1920x1080" alt="" hidden>
+</body>
+</html>
