@@ -10,6 +10,7 @@ Install the dependencies and devDependencies and start the server.
 npm install
 npm run start
 ```
+[or click quick-start two times]
 
 ### Useful links
 * [Bootstrap 4](https://getbootstrap.com/docs/4.3) for style 
